@@ -1,8 +1,0 @@
-# Verbindung mit Homeserver
-set mntList to {"mnt_00", "mnt_01", "mnt_02", "mnt_03"}
-
-repeat with vol in mntList
-	if mnt is not in (list disks) then
-		mount volume "afp://192.168.xxx.xxx" & "/" & mnt
-	end if
-end repeat
